@@ -1,0 +1,23 @@
+<div>
+    <div class="modal-header">
+        <h3 class="modal-title">Add Question</h3>
+    </div>
+    <div class="modal-body">
+
+        <form name="serviceForm">
+
+            <div class="form-group">
+                <label for="que">Question:</label>
+                <input name="q" placeholder="Enter Question" class="input form-control" type="text" ng-model="ac.qdata.q.text" />
+            </div>
+
+            <div class="form-group">
+                <label for="que">Answer:</label>
+                <input name="a" placeholder="Enter Answer" class="input form-control" type="text" ng-model="ac.qdata.a.text" />
+            </div>
+            <button class="btn btn-primary" ng-click="ac.addQ()">Save</button>
+            <button class="btn btn-primary" ng-click="$close()">Cancel</button>
+        </form>
+
+    </div>
+</div>
