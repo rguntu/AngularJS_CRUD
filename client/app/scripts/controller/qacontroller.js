@@ -21,27 +21,21 @@ angular.module("clientApp").controller("qacontroller", [
     vm.batchDelete = batchDelete;
 
     function batchDelete() {
-      var promises = [];
-      angular.forEach(vm.selectedRows, function(value) {
-        var deferred = $q.defer();
-        promises.push(deferred.promise);
-        qaservice
-          .deleteQ(value)
-          //qaservice.postQA(vm.q)
-          .then(
-            function(response) {
-              vm.qStatus = "Success";
-              deferred.resolve();
-            },
-            function(error) {
-              vm.qStatus = "Error";
-              deferred.resolve();
-            }
-          );
-      });
-      $q.all(promises).then(function() {
-        $scope.gridOptions.data = [];
-        vm.getNames();
+      $uibModal.open({
+        templateUrl: "views/deleteModal.html",
+        controller: [
+          "selectedRows",
+          "$scope",
+          "$q",
+          "qaservice",
+          "$uibModalInstance",
+          deletecontroller
+        ],
+        controllerAs: "del",
+        scope: $scope,
+        resolve: {
+          selectedRows: function () { return vm.selectedRows }
+        }
       });
     }
 
@@ -88,7 +82,7 @@ angular.module("clientApp").controller("qacontroller", [
     $scope.tableHeight = "height: 600px";
 
     function getTableHeight(totalPage, currentPage, pageSize, dataLen) {
-      var rowHeight = 30; // row height
+      var rowHeight = 35; // row height
       var headerHeight = 1; // header height
       var footerHeight = 10; // bottom scroll bar height
       var totalH = 0;
@@ -107,6 +101,8 @@ angular.module("clientApp").controller("qacontroller", [
       } else {
         totalH = dataLen * rowHeight + headerHeight + footerHeight;
       }
+
+      console.log("height: " + totalH + "px");
       return "height: " + totalH + "px";
     }
     $interval(function() {
