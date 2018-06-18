@@ -84,7 +84,7 @@ angular.module("clientApp").controller("qacontroller", [
     function getTableHeight(totalPage, currentPage, pageSize, dataLen) {
       var rowHeight = 35; // row height
       var headerHeight = 1; // header height
-      var footerHeight = 10; // bottom scroll bar height
+      var footerHeight = 5; // bottom scroll bar height
       var totalH = 0;
       if (totalPage > 1) {
         if (currentPage < totalPage) {
@@ -125,7 +125,7 @@ angular.module("clientApp").controller("qacontroller", [
     $scope.pageSize = paginationOptions.pageSize;
     $scope.gridOptions = {
       expandableRowTemplate: "views/expandableRowTemplate.html",
-      expandableRowHeight: 70,
+      expandableRowHeight: 75,
       rowTemplate:
         '<div ng-dblclick="grid.appScope.vm.editRow(grid, row)" ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell" ng-class="{ \'ui-grid-row-header-cell\': col.isRowHeader }" ui-grid-cell></div>',
       showGridFooter: true,

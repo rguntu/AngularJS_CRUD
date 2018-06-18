@@ -1,6 +1,9 @@
 # QA_CRUD
 
-![QA Grid](http://url/to/img.png)
+![QA Grid](https://imgur.com/VzQ3zZb)
+![Add QA](https://imgur.com/R67XYGD)
+![Edit QA](https://imgur.com/NaIPbHj)
+![Delete QA](https://imgur.com/Tv9aVsD)
 
 
 * for Client(AngularJS) setup:
