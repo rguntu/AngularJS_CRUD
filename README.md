@@ -1,9 +1,9 @@
 # QA_CRUD
 
-![QA Grid](https://imgur.com/VzQ3zZb)
-![Add QA](https://imgur.com/R67XYGD)
-![Edit QA](https://imgur.com/NaIPbHj)
-![Delete QA](https://imgur.com/Tv9aVsD)
+* ![QA Grid](https://i.imgur.com/VzQ3zZb.png)
+* ![Add QA](https://i.imgur.com/R67XYGD.png)
+* ![Edit QA](https://i.imgur.com/NaIPbHj.pngj)
+* ![Delete QA](https://i.imgur.com/Tv9aVsD.png)
 
 
 * for Client(AngularJS) setup:
