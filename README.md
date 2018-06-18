@@ -1,17 +1,20 @@
 # QA_CRUD
 
+![QA Grid](http://url/to/img.png)
+
+
 * for Client(AngularJS) setup:
 
-* npm i -g npm@5.6.0
-* npm cache clean --force && bower cache clean
-* npm i & bower install
+	* npm i -g npm@5.6.0
+	* npm cache clean --force && bower cache clean
+	* npm i & bower install
 
 
 * for Server(NodeJS) setup:
 
-* Install mongoDB
-mongod --dbpath ~/mongodb/data/db
-* PORT=4000 npm start
+	* Install mongoDB
+		mongod --dbpath ~/mongodb/data/db
+	* PORT=4000 npm start
 
 
 
