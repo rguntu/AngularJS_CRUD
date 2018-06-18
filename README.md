@@ -1,11 +1,5 @@
 # QA_CRUD
 
-* ![QA Grid](https://i.imgur.com/VzQ3zZb.png)
-* ![Add QA](https://i.imgur.com/R67XYGD.png)
-* ![Edit QA](https://i.imgur.com/NaIPbHj.pngj)
-* ![Delete QA](https://i.imgur.com/Tv9aVsD.png)
-
-
 * for Client(AngularJS) setup:
 
 	* npm i -g npm@5.6.0
@@ -18,6 +12,13 @@
 	* Install mongoDB
 		mongod --dbpath ~/mongodb/data/db
 	* PORT=4000 npm start
+
+
+* ![QA Grid](https://i.imgur.com/VzQ3zZb.png)
+* ![Add QA](https://i.imgur.com/R67XYGD.png)
+* ![Edit QA](https://i.imgur.com/NaIPbHj.pngj)
+* ![Delete QA](https://i.imgur.com/Tv9aVsD.png)
+
 
 
 
